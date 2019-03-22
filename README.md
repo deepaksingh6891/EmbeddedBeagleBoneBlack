@@ -1,2 +1,2 @@
 # EmbeddedBeagleBoneBlack
-1. Serial port monitoring system: PuTTY, Tera Term, Real Term
+1. Serial port monitoring system: PuTTY, Tera Term, Real Term(Windows host)
