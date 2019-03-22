@@ -1,0 +1,36 @@
+#Serial port/ UART port monitoring system 
+
+There are specific softwares available for specific host machines to monitor Serial port.
+1. ubuntu host: minicom
+2. windows host: Tera Term, PuTTY and Real Term
+
+PuTTY:
+1. Connect the RxD, TxD and GND of the USB to TTL converter to the appropriate pins of serial/UART connector.  
+2. Check the device manager for the port on which the USB to TTL converter is connected. eg COM6
+3. Open the PuTTY monitoring system and in connection type: select Serial 
+4. Enter the serial line: the port on which USB to TTL connector is connected found in step 2. eg COM6
+5. Each board has a specific default port setting and in case of BBB the settings can be found on 
+	https://elinux.org/Beagleboard:BeagleBone_Black_Serial#Serial_Port_Settings
+6. The default serial port settings for the board are:
+	Baud 115,200
+	Bits 8
+	Parity N
+	Stop Bits 1
+	Handshake None
+7. enter the speed : 115200
+8. open the session by selecting open 
+
+
+Tera Term:
+1. follow steps 1-3 from PutttY 
+2. Select Setup - Serial port - enter the default serial port setting as mentioned above in step 6. 
+3. press OK 
+
+Real Term: 
+1. Select port and enter the port settings 
+2. Select change 
+3. Select open to see the debug messages.
+
+
+
+
